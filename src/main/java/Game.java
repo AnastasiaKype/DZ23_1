@@ -15,11 +15,9 @@ public class Game {
 
     public boolean isFailed(int speed) {
 
-        if (isGreenLight == false) {
-            if (speed !=0){
-
-            } return true;
-        } else {
+        if (isGreenLight == false && speed !=0) {
+            return true;
+            } else {
             return false;
         }
 

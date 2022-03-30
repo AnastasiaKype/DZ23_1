@@ -38,13 +38,16 @@ public class GameManager {
             if (game.isFailed(p1.getSpeed())) {
                 if (game.isFailed(p2.getSpeed())) {
                     x = 0;
+                    break;
                 } else {
                     x = -1;
+                    break;
                 }
-                break;
+
             } else {
-                if (!game.isFailed(p2.getSpeed())) {
+                if (game.isFailed(p2.getSpeed())) {
                     x = 1;
+                    break;
                 }
             }
             i++;
