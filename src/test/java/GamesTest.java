@@ -33,7 +33,7 @@ public class GamesTest {
         GameManager gameManager = new GameManager(new Game(false));
         gameManager.setSpeeds(new int[] {5,0,2,5,3});
 
-        int expected = 0;
+        int expected = 1;
         int actual = gameManager.attempts(gameManager.getSpeeds());
 
         Assertions.assertEquals(expected, actual);
